@@ -1,4 +1,4 @@
-<%= render 'users/side',user: @user, book: @book %>
+<%= render 'users/side',user: @user, book: @booknew %>
 <div class="col-xs-9">
 	<h2>Book detail</h2>
 	<table class="table">
@@ -17,14 +17,14 @@
 			    <td>
 			    	<%= link_to "Edit", edit_book_path(@book) %>
 			    		
-			    	</td>
-			    	<td>
-			    		<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+			    </td>
+			    <td>
+			    	<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
 			    			
-			    		</td>
-			    		<% end %>
-			    	</tr>
-			    </tbody>
-			</table>
-		</div>
+			    </td>
+			    	<% end %>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
